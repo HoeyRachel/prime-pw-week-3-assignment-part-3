@@ -31,20 +31,20 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges);
 console.log('6. Showing supplyChanges...');
 
 
-let partsOrdered=''
-for (let i = 0; i < supplyChanges.length; i++){
-    console.log ('supplyChanges:', supplyChanges[i] );
-    if (supplyChanges[i]>partsOrdered) {
-        console.log ('added:' +  supplyChanges [i], 'parts.');
-    }
-      else if (supplyChanges [i] === 0) {
-        console.log ('No Change.');
-      }
-      if 
-        (supplyChanges[i]<partsOrdered) {
-        console.log ('Removed:' + supplyChanges [i], 'parts.');
-        }
- } 
+// let partsOrdered=''
+// for (let i = 0; i < supplyChanges.length; i++){
+//     console.log ('supplyChanges:', supplyChanges[i] );
+//     if (supplyChanges[i]>partsOrdered) {
+//         console.log ('added:' +  supplyChanges [i], 'parts.');
+//     }
+//       else if (supplyChanges [i] === 0) {
+//         console.log ('No Change.');
+//       }
+//       if 
+//         (supplyChanges[i]<partsOrdered) {
+//         console.log ('Removed:' + supplyChanges [i], 'parts.');
+//         }
+//  } 
 
      
 
@@ -71,13 +71,55 @@ for (let i = 0; i < supplyChanges.length; i++){
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
-// 7. Rewrite the `for` loop from #6 as a `for of` loop. 
-console.log('7. Showing supplyChanges with "for of" loop');
+// 7. Rewrite the `for` loop from #6 as a `for of` loop.  
+
+// console.log('7. Showing supplyChanges with "for of" loop');
+// let partsOrdered = [];
+// for (let i of partsOrdered) {
+//     partsOrdered += i; 
+//             console.log ('added:' +  partsOrdered[i], 'parts.');
+//         }
+//       partsOrdered === i; {
+//             console.log ('No Change.');
+//       }
+//       partsOrdered-= i; {
+//             console.log ('Removed:' + partsOrdered [i], 'parts.');
+//             }
+  
+
+
+
+
+
 
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
+// while (let i = 0; i < supplyChanges.length; i++){
+//       console.log ('supplyChanges:', supplyChanges[i] );
+//       if (supplyChanges[i]>partsOrdered) {
+//           console.log ('added:' +  supplyChanges [i], 'parts.');
+//       }
+//         else if (supplyChanges [i] === 0) {
+//           console.log ('No Change.');
+//         }
+//         if 
+//           (supplyChanges[i]<partsOrdered) {
+//           console.log ('Removed:' + supplyChanges [i], 'parts.');
+//           }
+//    } 
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
+
+
+let sum = 0;
+for (i=0; i<supplyChanges.length; i++){
+  sum+=supplyChanges[i];
+}
+ console.log ('Total supplies available is: ' + sum);
+
+
+
+
