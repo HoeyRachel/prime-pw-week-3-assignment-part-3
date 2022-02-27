@@ -29,9 +29,6 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 
-
-
-
 for (let i = 0; i < supplyChanges.length; i++){
     console.log ('supplyChanges:', supplyChanges[i] );
     if (supplyChanges[i]>0) {
@@ -46,13 +43,6 @@ for (let i = 0; i < supplyChanges.length; i++){
         }
  } 
  
-     
-
-    
-    
-    
-
-
 
 // if( hand.includes( cardSearch ) ){
     // //     console.log( cardSearch, 'found in hand' );
@@ -72,19 +62,15 @@ for (let i = 0; i < supplyChanges.length; i++){
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.  
-
-// console.log('7. Showing supplyChanges with "for of" loop');
-// let partsOrdered = [];
-// for (let i of partsOrdered) {
-//     partsOrdered += i; 
-//             console.log ('added:' +  partsOrdered[i], 'parts.');
-//         }
-//       partsOrdered === i; {
-//             console.log ('No Change.');
-//       }
-//       partsOrdered-= i; {
-//             console.log ('Removed:' + partsOrdered [i], 'parts.');
-//             }
+          for (let supply of supplyChanges){
+            if(supply > 0){
+                console.log('added:' +  supply, 'parts.');
+            } else if (supply === 0){
+                console.log(`No Change.`);
+            } else if (supply < 0){
+                console.log('Removed:' + supply, 'parts.');
+            }
+        }
   
 
 
